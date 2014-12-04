@@ -1,5 +1,15 @@
 html,
 body
+#main-wrap>div
+{
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+#block-up-arrow, #block-down-arrow {
+  cursor: pointer;
+}
+
 {
   padding: 0;
   margin: 0;
