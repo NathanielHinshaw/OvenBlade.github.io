@@ -47,7 +47,7 @@ h1
   */
 .horizon
 {
-  z-index: 400;
+  z-index: 1;
   width: 3000px;
 }
 
