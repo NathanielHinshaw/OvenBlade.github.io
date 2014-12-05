@@ -25,9 +25,9 @@ h2
 
 .middle
 {
-    z-index: 250;
+    z-index: 1000;
     line-height: 0;
-    width: 20000px;
+    width: 4500px;
 }
 
 .front
