@@ -26,8 +26,8 @@ body
 h1
 {
   position: fixed;
-  top: 50;
-  right: 0;
+  top: 0;
+  right: 500;
   font-size: 20px;
   font-weight: normal;
   color: #2e6e80;
