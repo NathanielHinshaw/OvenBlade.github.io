@@ -26,8 +26,6 @@ body
 
 h1
 {
-  position: fixed;
-  /*top: 0;*/
   font-size: 20px;
   font-weight: normal;
   color: #2e6e80;
@@ -65,4 +63,37 @@ h1
 {
   z-index: 1000;
   width: 6000px;
+}
+.page
+{
+    top: 0px;
+    width: 500px;
+    background: white;
+    padding: 10px 30px;
+    border: 1px #eee solid;
+    position: absolute;
+}
+.panel1
+{
+    left: 500px;
+}
+
+.panel2
+{
+    left: 1225px;
+}
+
+.panel3
+{
+    left: 1950px;
+}
+
+.panel4
+{
+    left: 2675px;
+}
+
+.panel5
+{
+    left: 3400px;
 }
