@@ -7,7 +7,15 @@
 </head>
 <body>
     <h1>jInvertScroll Example</h1>
-    
+    <div class="panel1 page">
+				<h1>SomeSampleText</h1>
+				<p>
+					Some More Sample Stuff
+				</p>
+				<p>
+					Once upon a time there was some sample text here.
+				</p>
+			</div>
     <div class="horizon scroll">
         <img src="images/horizon.png" alt="" />
     </div>
@@ -21,15 +29,7 @@
     <script type="text/javascript" src="../libs/jquery.min.js"></script>
     <script type="text/javascript" src="../src/jquery.jInvertScroll.js"></script>
     <script type="text/javascript">
-	<div class="panel1 page">
-				<h1>SomeSampleText</h1>
-				<p>
-					Some More Sample Stuff
-				</p>
-				<p>
-					Once upon a time there was some sample text here.
-				</p>
-			</div>
+	
     (function($) {
         var elem = $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
             {
