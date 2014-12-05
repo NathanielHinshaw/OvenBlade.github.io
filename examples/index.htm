@@ -2,52 +2,66 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>jInvertScroll Demo Page</title>
-    <link rel="stylesheet" href="css/example.css" />
+	<title>The Hot Air Balloon</title>
+	<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/jInvertScroll.css" />
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <h1>jInvertScroll Example</h1>
-    <div class="panel1 page">
-				<h1>SomeSampleText</h1>
+	<div class="container">
+		
+		<div class="horizon scroll">
+			<img src="images/front.png" alt="" />
+		</div>
+		
+		<div class="middle scroll">
+			<img src="images/horizon.png" alt="" />
+		</div>
+		
+		
+			<div class="panel1 page">
+				<h1>The Hot Air Balloon</h1>
 				<p>
-					Some More Sample Stuff
+					The hot air balloon is the oldest successful human-carrying flight technology. It is part of a class of aircraft known as balloon aircraft.
 				</p>
 				<p>
-					Once upon a time there was some sample text here.
+					On November 21, 1783, in Paris, France, the first untethered manned flight was performed by Jean-François Pilâtre de Rozier and François Laurent d'Arlandes in a hot air balloon created on December 14, 1782 by the Montgolfier brothers. Hot air balloons that can be propelled through the air rather than just being pushed along by the wind are known as airships or, more specifically, thermal airships.
 				</p>
 			</div>
-    <div class="horizon scroll">
-        <img src="images/horizon.png" alt="" />
+			
+			<div class="panel2 page">
+				<h1>How they work</h1> 
+				<p>A hot air balloon consists of a bag called the envelope that is capable of containing heated air. Suspended beneath is a gondola or wicker basket (in some long-distance or high-altitude balloons, a capsule), which carries passengers and (usually) a source of heat, in most cases an open flame. 
+				</p>
+				<p>
+				The heated air inside the envelope makes it buoyant since it has a lower density than the relatively cold air outside the envelope. 
+				</p>
+			</div>
+			
+			<div class="panel3 page">
+				<h1>Practicalities</h1>
+				<p>As with all aircraft, hot air balloons cannot fly beyond the atmosphere. Unlike gas balloons, the envelope does not have to be sealed at the bottom since the air near the bottom of the envelope is at the same pressure as the air surrounding. 
+				</p>
+				<p>
+				For modern sport balloons the envelope is generally made from nylon fabric and the inlet of the balloon (closest to the burner flame) is made from fire resistant material such as <a href="http://en.wikipedia.org/wiki/Nomex">Nomex</a>. </p>
+			</div>
+			
+			<div class="panel4 page">
+				<h1>Modern ballooning</h1>
+				<p>
+				Beginning during the mid-1970s, balloon envelopes have been made in all kinds of shapes, such as rocket ships and the shapes of various commercial products, though the traditional shape remains popular for most non-commercial, and many commercial, applications.
+				</p>
+			</div>
     </div>
-    <div class="middle scroll">
-        <img src="images/middle.png" alt="" />
-    </div>
-    <div class="front scroll">
-        <img src="images/front.png" alt="" />
-    </div>
-    
-    <script type="text/javascript" src="../libs/jquery.min.js"></script>
-    <script type="text/javascript" src="../src/jquery.jInvertScroll.js"></script>
-    <script type="text/javascript">
 	
-    (function($) {
-        var elem = $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
-            {
-            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
-            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
-                console.log(percent);
-            }
-        });
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+	<script type="text/javascript">
+	(function($) {
+		$.jInvertScroll(['.scroll']);
+	}(jQuery));
 
-        $(window).resize(function() {
-          if ($(window).width() <= 768) {
-            elem.destroy();
-          }
-          else {
-            elem.reinitialize();
-          }
-        });
-    }(jQuery));
-    </script>
+	</script>
+	
 </body>
 </html>
